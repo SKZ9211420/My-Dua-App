@@ -1,0 +1,867 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6E6011E62B540C0400897299 /* DuaManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E6011E52B540C0400897299 /* DuaManager.swift */; };
+		6E6011EB2B5416CE00897299 /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CEC3962437702600188BF6 /* PlayerViewController.swift */; };
+		6E6011EC2B5416CE00897299 /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CEC3962437702600188BF6 /* PlayerViewController.swift */; };
+		6E6011F42B5461F600897299 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE4FF182B5334EB00EFCC53 /* IntentHandler.swift */; };
+		6E6011F52B5461FE00897299 /* IntentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE4FF222B5334EC00EFCC53 /* IntentViewController.swift */; };
+		6E6011F72B54621A00897299 /* AppIntents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E6011F62B54621A00897299 /* AppIntents.framework */; };
+		6E6011F92B54622100897299 /* libswiftIntents.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E6011F82B54622100897299 /* libswiftIntents.tbd */; };
+		6E6012032B54649900897299 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CEC37F24376D4A00188BF6 /* ViewController.swift */; };
+		6E6012042B54649A00897299 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CEC37F24376D4A00188BF6 /* ViewController.swift */; };
+		6E6012112B5464FE00897299 /* libswiftIntents.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E6011F82B54622100897299 /* libswiftIntents.tbd */; };
+		6E6012122B5464FF00897299 /* libswiftIntents.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E6011F82B54622100897299 /* libswiftIntents.tbd */; };
+		6E6012132B54650800897299 /* AppIntents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E6011F62B54621A00897299 /* AppIntents.framework */; };
+		6E6012142B54650800897299 /* AppIntents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E6011F62B54621A00897299 /* AppIntents.framework */; };
+		6E6808B62B588819005AD79F /* DuaManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E6011E52B540C0400897299 /* DuaManager.swift */; };
+		6E6808B72B588819005AD79F /* DuaManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E6011E52B540C0400897299 /* DuaManager.swift */; };
+		6E6808C12B58939F005AD79F /* PlayDuaIntentDefinition.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 6E6808C02B58939F005AD79F /* PlayDuaIntentDefinition.intentdefinition */; };
+		6E6808C22B58939F005AD79F /* PlayDuaIntentDefinition.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 6E6808C02B58939F005AD79F /* PlayDuaIntentDefinition.intentdefinition */; };
+		6E6808C32B58939F005AD79F /* PlayDuaIntentDefinition.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 6E6808C02B58939F005AD79F /* PlayDuaIntentDefinition.intentdefinition */; };
+		6EBB138C2B07D8AF002C356F /* Dua before starting Wadu.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6EBB13802B07D8AF002C356F /* Dua before starting Wadu.mp3 */; };
+		6EBB138D2B07D8AF002C356F /* Morning Dua.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6EBB13812B07D8AF002C356F /* Morning Dua.mp3 */; };
+		6EBB138E2B07D8AF002C356F /* Dua before going to Toilet.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6EBB13822B07D8AF002C356F /* Dua before going to Toilet.mp3 */; };
+		6EBB138F2B07D8AF002C356F /* Dua for entering in Masjid.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6EBB13832B07D8AF002C356F /* Dua for entering in Masjid.mp3 */; };
+		6EBB13902B07D8AF002C356F /* Dua when sunrise.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6EBB13842B07D8AF002C356F /* Dua when sunrise.mp3 */; };
+		6EBB13912B07D8AF002C356F /* Dua when u hear Azan.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6EBB13852B07D8AF002C356F /* Dua when u hear Azan.mp3 */; };
+		6EBB13922B07D8AF002C356F /* Special Dua for morning and evening.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6EBB13862B07D8AF002C356F /* Special Dua for morning and evening.mp3 */; };
+		6EBB13932B07D8AF002C356F /* Dua after Toilet.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6EBB13872B07D8AF002C356F /* Dua after Toilet.mp3 */; };
+		6EBB13942B07D8AF002C356F /* Dua before sleeping.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6EBB13882B07D8AF002C356F /* Dua before sleeping.mp3 */; };
+		6EBB13952B07D8AF002C356F /* Dua when leaving Masjid.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6EBB13892B07D8AF002C356F /* Dua when leaving Masjid.mp3 */; };
+		6EBB13962B07D8AF002C356F /* Dua after waking up.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6EBB138A2B07D8AF002C356F /* Dua after waking up.mp3 */; };
+		6EBB13972B07D8AF002C356F /* Dua While sitting in Masjid.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6EBB138B2B07D8AF002C356F /* Dua While sitting in Masjid.mp3 */; };
+		6EBB13992B087D2F002C356F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6EBB13982B087D2F002C356F /* Main.storyboard */; };
+		6EE4FEE52B52BC2400EFCC53 /* PlayDuaIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE4FEE42B52BC2400EFCC53 /* PlayDuaIntent.swift */; };
+		6EE4FEE72B52BC4900EFCC53 /* PlayDuaIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE4FEE62B52BC4900EFCC53 /* PlayDuaIntentHandler.swift */; };
+		6EE4FF192B5334EB00EFCC53 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE4FF182B5334EB00EFCC53 /* IntentHandler.swift */; };
+		6EE4FF232B5334EC00EFCC53 /* IntentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE4FF222B5334EC00EFCC53 /* IntentViewController.swift */; };
+		6EE4FF262B5334EC00EFCC53 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6EE4FF242B5334EC00EFCC53 /* MainInterface.storyboard */; };
+		6EE4FF2A2B5334EC00EFCC53 /* Soluful SupplicationUI.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 6EE4FF1F2B5334EC00EFCC53 /* Soluful SupplicationUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6EE4FF2D2B5334EC00EFCC53 /* Soluful Supplication.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 6EE4FF152B5334EB00EFCC53 /* Soluful Supplication.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6EE4FF382B533AE600EFCC53 /* PlayDuaIntentResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE4FF372B533AE600EFCC53 /* PlayDuaIntentResponse.swift */; };
+		6EE4FF392B533AE600EFCC53 /* PlayDuaIntentResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE4FF372B533AE600EFCC53 /* PlayDuaIntentResponse.swift */; };
+		6EE4FF3A2B533AE600EFCC53 /* PlayDuaIntentResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE4FF372B533AE600EFCC53 /* PlayDuaIntentResponse.swift */; };
+		6EE4FF3C2B533C0300EFCC53 /* PlayDuaIntentHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE4FF3B2B533C0300EFCC53 /* PlayDuaIntentHandling.swift */; };
+		6EE4FF3D2B533C0300EFCC53 /* PlayDuaIntentHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE4FF3B2B533C0300EFCC53 /* PlayDuaIntentHandling.swift */; };
+		6EE4FF3E2B533C0300EFCC53 /* PlayDuaIntentHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE4FF3B2B533C0300EFCC53 /* PlayDuaIntentHandling.swift */; };
+		6EE4FF3F2B533C2500EFCC53 /* PlayDuaIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE4FEE42B52BC2400EFCC53 /* PlayDuaIntent.swift */; };
+		6EE4FF402B533C2600EFCC53 /* PlayDuaIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE4FEE42B52BC2400EFCC53 /* PlayDuaIntent.swift */; };
+		6EE4FF412B533C2B00EFCC53 /* PlayDuaIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE4FEE62B52BC4900EFCC53 /* PlayDuaIntentHandler.swift */; };
+		6EE4FF422B533C2C00EFCC53 /* PlayDuaIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE4FEE62B52BC4900EFCC53 /* PlayDuaIntentHandler.swift */; };
+		6EE4FF4F2B533E3600EFCC53 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CEC37F24376D4A00188BF6 /* ViewController.swift */; };
+		83CEC37C24376D4A00188BF6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CEC37B24376D4A00188BF6 /* AppDelegate.swift */; };
+		83CEC37E24376D4A00188BF6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CEC37D24376D4A00188BF6 /* SceneDelegate.swift */; };
+		83CEC38524376D4B00188BF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83CEC38424376D4B00188BF6 /* Assets.xcassets */; };
+		83CEC38824376D4B00188BF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83CEC38624376D4B00188BF6 /* LaunchScreen.storyboard */; };
+		83CEC3972437702600188BF6 /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CEC3962437702600188BF6 /* PlayerViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6EE4FF282B5334EC00EFCC53 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CEC37024376D4A00188BF6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6EE4FF1E2B5334EC00EFCC53;
+			remoteInfo = "Soluful SupplicationUI";
+		};
+		6EE4FF2B2B5334EC00EFCC53 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CEC37024376D4A00188BF6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6EE4FF142B5334EB00EFCC53;
+			remoteInfo = "Soluful Supplication";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6E6011F12B545EE400897299 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EE4FF102B5330DB00EFCC53 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				6EE4FF2A2B5334EC00EFCC53 /* Soluful SupplicationUI.appex in Embed Foundation Extensions */,
+				6EE4FF2D2B5334EC00EFCC53 /* Soluful Supplication.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		6E6011E52B540C0400897299 /* DuaManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuaManager.swift; sourceTree = "<group>"; };
+		6E6011F62B54621A00897299 /* AppIntents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppIntents.framework; path = System/Library/Frameworks/AppIntents.framework; sourceTree = SDKROOT; };
+		6E6011F82B54622100897299 /* libswiftIntents.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libswiftIntents.tbd; path = usr/lib/swift/libswiftIntents.tbd; sourceTree = SDKROOT; };
+		6E611EE62B3065600081BCEF /* Soulful Supplication.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Soulful Supplication.entitlements"; sourceTree = "<group>"; };
+		6E6808B52B5882BA005AD79F /* Dua when leaving Masjid.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Dua when leaving Masjid.mp3"; sourceTree = "<group>"; };
+		6E6808C02B58939F005AD79F /* PlayDuaIntentDefinition.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = PlayDuaIntentDefinition.intentdefinition; sourceTree = "<group>"; };
+		6EBB13802B07D8AF002C356F /* Dua before starting Wadu.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Dua before starting Wadu.mp3"; path = "../../../../DUAMP3/Dua before starting Wadu.mp3"; sourceTree = "<group>"; };
+		6EBB13812B07D8AF002C356F /* Morning Dua.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Morning Dua.mp3"; path = "../../../../DUAMP3/Morning Dua.mp3"; sourceTree = "<group>"; };
+		6EBB13822B07D8AF002C356F /* Dua before going to Toilet.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Dua before going to Toilet.mp3"; path = "../../../../DUAMP3/Dua before going to Toilet.mp3"; sourceTree = "<group>"; };
+		6EBB13832B07D8AF002C356F /* Dua for entering in Masjid.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Dua for entering in Masjid.mp3"; path = "../../../../DUAMP3/Dua for entering in Masjid.mp3"; sourceTree = "<group>"; };
+		6EBB13842B07D8AF002C356F /* Dua when sunrise.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Dua when sunrise.mp3"; path = "../../../../DUAMP3/Dua when sunrise.mp3"; sourceTree = "<group>"; };
+		6EBB13852B07D8AF002C356F /* Dua when u hear Azan.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Dua when u hear Azan.mp3"; path = "../../../../DUAMP3/Dua when u hear Azan.mp3"; sourceTree = "<group>"; };
+		6EBB13862B07D8AF002C356F /* Special Dua for morning and evening.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Special Dua for morning and evening.mp3"; path = "../../../../DUAMP3/Special Dua for morning and evening.mp3"; sourceTree = "<group>"; };
+		6EBB13872B07D8AF002C356F /* Dua after Toilet.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Dua after Toilet.mp3"; path = "../../../../DUAMP3/Dua after Toilet.mp3"; sourceTree = "<group>"; };
+		6EBB13882B07D8AF002C356F /* Dua before sleeping.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Dua before sleeping.mp3"; path = "../../../../DUAMP3/Dua before sleeping.mp3"; sourceTree = "<group>"; };
+		6EBB13892B07D8AF002C356F /* Dua when leaving Masjid.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Dua when leaving Masjid.mp3"; path = "../../../../DUAMP3/Dua when leaving Masjid.mp3"; sourceTree = "<group>"; };
+		6EBB138A2B07D8AF002C356F /* Dua after waking up.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Dua after waking up.mp3"; path = "../../../../DUAMP3/Dua after waking up.mp3"; sourceTree = "<group>"; };
+		6EBB138B2B07D8AF002C356F /* Dua While sitting in Masjid.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Dua While sitting in Masjid.mp3"; path = "../../../../DUAMP3/Dua While sitting in Masjid.mp3"; sourceTree = "<group>"; };
+		6EBB13982B087D2F002C356F /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		6EE4FEE42B52BC2400EFCC53 /* PlayDuaIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayDuaIntent.swift; sourceTree = "<group>"; };
+		6EE4FEE62B52BC4900EFCC53 /* PlayDuaIntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayDuaIntentHandler.swift; sourceTree = "<group>"; };
+		6EE4FF152B5334EB00EFCC53 /* Soluful Supplication.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Soluful Supplication.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EE4FF182B5334EB00EFCC53 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		6EE4FF1A2B5334EB00EFCC53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6EE4FF1F2B5334EC00EFCC53 /* Soluful SupplicationUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Soluful SupplicationUI.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EE4FF222B5334EC00EFCC53 /* IntentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentViewController.swift; sourceTree = "<group>"; };
+		6EE4FF252B5334EC00EFCC53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		6EE4FF272B5334EC00EFCC53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6EE4FF372B533AE600EFCC53 /* PlayDuaIntentResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayDuaIntentResponse.swift; sourceTree = "<group>"; };
+		6EE4FF3B2B533C0300EFCC53 /* PlayDuaIntentHandling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayDuaIntentHandling.swift; sourceTree = "<group>"; };
+		83CEC37824376D4A00188BF6 /* Soulful Supplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Soulful Supplication.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		83CEC37B24376D4A00188BF6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		83CEC37D24376D4A00188BF6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		83CEC37F24376D4A00188BF6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		83CEC38424376D4B00188BF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		83CEC38724376D4B00188BF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		83CEC38924376D4B00188BF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83CEC3962437702600188BF6 /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6EE4FF122B5334EB00EFCC53 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E6012112B5464FE00897299 /* libswiftIntents.tbd in Frameworks */,
+				6E6012132B54650800897299 /* AppIntents.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EE4FF1C2B5334EC00EFCC53 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E6012122B5464FF00897299 /* libswiftIntents.tbd in Frameworks */,
+				6E6012142B54650800897299 /* AppIntents.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83CEC37524376D4A00188BF6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E6011F92B54622100897299 /* libswiftIntents.tbd in Frameworks */,
+				6E6011F72B54621A00897299 /* AppIntents.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6E611ED32B3056730081BCEF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6E6011F82B54622100897299 /* libswiftIntents.tbd */,
+				6E6011F62B54621A00897299 /* AppIntents.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6EBB13782B07CEA8002C356F /*  DuaMp3 */ = {
+			isa = PBXGroup;
+			children = (
+				6EBB13872B07D8AF002C356F /* Dua after Toilet.mp3 */,
+				6EBB138A2B07D8AF002C356F /* Dua after waking up.mp3 */,
+				6EBB13822B07D8AF002C356F /* Dua before going to Toilet.mp3 */,
+				6EBB13882B07D8AF002C356F /* Dua before sleeping.mp3 */,
+				6EBB13802B07D8AF002C356F /* Dua before starting Wadu.mp3 */,
+				6EBB13832B07D8AF002C356F /* Dua for entering in Masjid.mp3 */,
+				6EBB13892B07D8AF002C356F /* Dua when leaving Masjid.mp3 */,
+				6EBB13842B07D8AF002C356F /* Dua when sunrise.mp3 */,
+				6EBB13852B07D8AF002C356F /* Dua when u hear Azan.mp3 */,
+				6EBB138B2B07D8AF002C356F /* Dua While sitting in Masjid.mp3 */,
+				6EBB13812B07D8AF002C356F /* Morning Dua.mp3 */,
+				6E6808B52B5882BA005AD79F /* Dua when leaving Masjid.mp3 */,
+				6EBB13862B07D8AF002C356F /* Special Dua for morning and evening.mp3 */,
+			);
+			path = " DuaMp3";
+			sourceTree = "<group>";
+		};
+		6EBB13792B07CF46002C356F /* Dua Covers */ = {
+			isa = PBXGroup;
+			children = (
+				83CEC37D24376D4A00188BF6 /* SceneDelegate.swift */,
+				83CEC38424376D4B00188BF6 /* Assets.xcassets */,
+			);
+			path = "Dua Covers";
+			sourceTree = "<group>";
+		};
+		6EE4FF172B5334EB00EFCC53 /* Soluful Supplication */ = {
+			isa = PBXGroup;
+			children = (
+				6EE4FF182B5334EB00EFCC53 /* IntentHandler.swift */,
+				6EE4FF1A2B5334EB00EFCC53 /* Info.plist */,
+			);
+			path = "Soluful Supplication";
+			sourceTree = "<group>";
+		};
+		6EE4FF212B5334EC00EFCC53 /* Soluful SupplicationUI */ = {
+			isa = PBXGroup;
+			children = (
+				6EE4FF222B5334EC00EFCC53 /* IntentViewController.swift */,
+				6EE4FF242B5334EC00EFCC53 /* MainInterface.storyboard */,
+				6EE4FF272B5334EC00EFCC53 /* Info.plist */,
+			);
+			path = "Soluful SupplicationUI";
+			sourceTree = "<group>";
+		};
+		83CEC36F24376D4A00188BF6 = {
+			isa = PBXGroup;
+			children = (
+				6E611EE62B3065600081BCEF /* Soulful Supplication.entitlements */,
+				83CEC37A24376D4A00188BF6 /* MyMusic */,
+				6EE4FF172B5334EB00EFCC53 /* Soluful Supplication */,
+				6EE4FF212B5334EC00EFCC53 /* Soluful SupplicationUI */,
+				83CEC37924376D4A00188BF6 /* Products */,
+				6E611ED32B3056730081BCEF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		83CEC37924376D4A00188BF6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				83CEC37824376D4A00188BF6 /* Soulful Supplication.app */,
+				6EE4FF152B5334EB00EFCC53 /* Soluful Supplication.appex */,
+				6EE4FF1F2B5334EC00EFCC53 /* Soluful SupplicationUI.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		83CEC37A24376D4A00188BF6 /* MyMusic */ = {
+			isa = PBXGroup;
+			children = (
+				6EBB13792B07CF46002C356F /* Dua Covers */,
+				6EBB13782B07CEA8002C356F /*  DuaMp3 */,
+				6EE4FEE42B52BC2400EFCC53 /* PlayDuaIntent.swift */,
+				6E6011E52B540C0400897299 /* DuaManager.swift */,
+				83CEC37B24376D4A00188BF6 /* AppDelegate.swift */,
+				6EE4FEE62B52BC4900EFCC53 /* PlayDuaIntentHandler.swift */,
+				6EE4FF3B2B533C0300EFCC53 /* PlayDuaIntentHandling.swift */,
+				6EE4FF372B533AE600EFCC53 /* PlayDuaIntentResponse.swift */,
+				83CEC37F24376D4A00188BF6 /* ViewController.swift */,
+				83CEC3962437702600188BF6 /* PlayerViewController.swift */,
+				6EBB13982B087D2F002C356F /* Main.storyboard */,
+				83CEC38624376D4B00188BF6 /* LaunchScreen.storyboard */,
+				83CEC38924376D4B00188BF6 /* Info.plist */,
+				6E6808C02B58939F005AD79F /* PlayDuaIntentDefinition.intentdefinition */,
+			);
+			path = MyMusic;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6EE4FF142B5334EB00EFCC53 /* Soluful Supplication */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6EE4FF332B5334EC00EFCC53 /* Build configuration list for PBXNativeTarget "Soluful Supplication" */;
+			buildPhases = (
+				6EE4FF112B5334EB00EFCC53 /* Sources */,
+				6EE4FF122B5334EB00EFCC53 /* Frameworks */,
+				6EE4FF132B5334EB00EFCC53 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Soluful Supplication";
+			productName = "Soluful Supplication";
+			productReference = 6EE4FF152B5334EB00EFCC53 /* Soluful Supplication.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		6EE4FF1E2B5334EC00EFCC53 /* Soluful SupplicationUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6EE4FF322B5334EC00EFCC53 /* Build configuration list for PBXNativeTarget "Soluful SupplicationUI" */;
+			buildPhases = (
+				6EE4FF1B2B5334EC00EFCC53 /* Sources */,
+				6EE4FF1C2B5334EC00EFCC53 /* Frameworks */,
+				6EE4FF1D2B5334EC00EFCC53 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Soluful SupplicationUI";
+			productName = "Soluful SupplicationUI";
+			productReference = 6EE4FF1F2B5334EC00EFCC53 /* Soluful SupplicationUI.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		83CEC37724376D4A00188BF6 /* Soulful Supplication */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83CEC38C24376D4B00188BF6 /* Build configuration list for PBXNativeTarget "Soulful Supplication" */;
+			buildPhases = (
+				83CEC37424376D4A00188BF6 /* Sources */,
+				83CEC37524376D4A00188BF6 /* Frameworks */,
+				83CEC37624376D4A00188BF6 /* Resources */,
+				6EE4FF102B5330DB00EFCC53 /* Embed Foundation Extensions */,
+				6E6011F12B545EE400897299 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6EE4FF292B5334EC00EFCC53 /* PBXTargetDependency */,
+				6EE4FF2C2B5334EC00EFCC53 /* PBXTargetDependency */,
+			);
+			name = "Soulful Supplication";
+			productName = MyMusic;
+			productReference = 83CEC37824376D4A00188BF6 /* Soulful Supplication.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		83CEC37024376D4A00188BF6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				ORGANIZATIONNAME = "ASN GROUP LLC";
+				TargetAttributes = {
+					6EE4FF142B5334EB00EFCC53 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					6EE4FF1E2B5334EC00EFCC53 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					83CEC37724376D4A00188BF6 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 83CEC37324376D4A00188BF6 /* Build configuration list for PBXProject "Soulful Supplication" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 83CEC36F24376D4A00188BF6;
+			productRefGroup = 83CEC37924376D4A00188BF6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				83CEC37724376D4A00188BF6 /* Soulful Supplication */,
+				6EE4FF142B5334EB00EFCC53 /* Soluful Supplication */,
+				6EE4FF1E2B5334EC00EFCC53 /* Soluful SupplicationUI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6EE4FF132B5334EB00EFCC53 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EE4FF1D2B5334EC00EFCC53 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EE4FF262B5334EC00EFCC53 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83CEC37624376D4A00188BF6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EBB138F2B07D8AF002C356F /* Dua for entering in Masjid.mp3 in Resources */,
+				6EBB13942B07D8AF002C356F /* Dua before sleeping.mp3 in Resources */,
+				6EBB13912B07D8AF002C356F /* Dua when u hear Azan.mp3 in Resources */,
+				6EBB138C2B07D8AF002C356F /* Dua before starting Wadu.mp3 in Resources */,
+				6EBB138E2B07D8AF002C356F /* Dua before going to Toilet.mp3 in Resources */,
+				6EBB13952B07D8AF002C356F /* Dua when leaving Masjid.mp3 in Resources */,
+				6EBB13992B087D2F002C356F /* Main.storyboard in Resources */,
+				6EBB13922B07D8AF002C356F /* Special Dua for morning and evening.mp3 in Resources */,
+				6EBB13962B07D8AF002C356F /* Dua after waking up.mp3 in Resources */,
+				83CEC38824376D4B00188BF6 /* LaunchScreen.storyboard in Resources */,
+				83CEC38524376D4B00188BF6 /* Assets.xcassets in Resources */,
+				6EBB138D2B07D8AF002C356F /* Morning Dua.mp3 in Resources */,
+				6EBB13932B07D8AF002C356F /* Dua after Toilet.mp3 in Resources */,
+				6EBB13972B07D8AF002C356F /* Dua While sitting in Masjid.mp3 in Resources */,
+				6EBB13902B07D8AF002C356F /* Dua when sunrise.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6EE4FF112B5334EB00EFCC53 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E6012032B54649900897299 /* ViewController.swift in Sources */,
+				6EE4FF3F2B533C2500EFCC53 /* PlayDuaIntent.swift in Sources */,
+				6EE4FF3D2B533C0300EFCC53 /* PlayDuaIntentHandling.swift in Sources */,
+				6EE4FF412B533C2B00EFCC53 /* PlayDuaIntentHandler.swift in Sources */,
+				6E6011EB2B5416CE00897299 /* PlayerViewController.swift in Sources */,
+				6EE4FF192B5334EB00EFCC53 /* IntentHandler.swift in Sources */,
+				6E6808B62B588819005AD79F /* DuaManager.swift in Sources */,
+				6EE4FF392B533AE600EFCC53 /* PlayDuaIntentResponse.swift in Sources */,
+				6E6808C22B58939F005AD79F /* PlayDuaIntentDefinition.intentdefinition in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EE4FF1B2B5334EC00EFCC53 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E6012042B54649A00897299 /* ViewController.swift in Sources */,
+				6EE4FF402B533C2600EFCC53 /* PlayDuaIntent.swift in Sources */,
+				6EE4FF3E2B533C0300EFCC53 /* PlayDuaIntentHandling.swift in Sources */,
+				6EE4FF422B533C2C00EFCC53 /* PlayDuaIntentHandler.swift in Sources */,
+				6E6011EC2B5416CE00897299 /* PlayerViewController.swift in Sources */,
+				6EE4FF232B5334EC00EFCC53 /* IntentViewController.swift in Sources */,
+				6E6808B72B588819005AD79F /* DuaManager.swift in Sources */,
+				6EE4FF3A2B533AE600EFCC53 /* PlayDuaIntentResponse.swift in Sources */,
+				6E6808C32B58939F005AD79F /* PlayDuaIntentDefinition.intentdefinition in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83CEC37424376D4A00188BF6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E6011F52B5461FE00897299 /* IntentViewController.swift in Sources */,
+				6E6011F42B5461F600897299 /* IntentHandler.swift in Sources */,
+				6EE4FEE52B52BC2400EFCC53 /* PlayDuaIntent.swift in Sources */,
+				6EE4FF382B533AE600EFCC53 /* PlayDuaIntentResponse.swift in Sources */,
+				83CEC3972437702600188BF6 /* PlayerViewController.swift in Sources */,
+				6EE4FEE72B52BC4900EFCC53 /* PlayDuaIntentHandler.swift in Sources */,
+				6EE4FF3C2B533C0300EFCC53 /* PlayDuaIntentHandling.swift in Sources */,
+				6E6011E62B540C0400897299 /* DuaManager.swift in Sources */,
+				6E6808C12B58939F005AD79F /* PlayDuaIntentDefinition.intentdefinition in Sources */,
+				83CEC37C24376D4A00188BF6 /* AppDelegate.swift in Sources */,
+				6EE4FF4F2B533E3600EFCC53 /* ViewController.swift in Sources */,
+				83CEC37E24376D4A00188BF6 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6EE4FF292B5334EC00EFCC53 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6EE4FF1E2B5334EC00EFCC53 /* Soluful SupplicationUI */;
+			targetProxy = 6EE4FF282B5334EC00EFCC53 /* PBXContainerItemProxy */;
+		};
+		6EE4FF2C2B5334EC00EFCC53 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6EE4FF142B5334EB00EFCC53 /* Soluful Supplication */;
+			targetProxy = 6EE4FF2B2B5334EC00EFCC53 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6EE4FF242B5334EC00EFCC53 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6EE4FF252B5334EC00EFCC53 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+		83CEC38624376D4B00188BF6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				83CEC38724376D4B00188BF6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6EE4FF2E2B5334EC00EFCC53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Soluful Supplication/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Soluful Supplication";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2024 ASN GROUP LLC. All rights reserved.";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/lib/swift",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.asndigital.MyMusic.Soluful-Supplication";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6EE4FF2F2B5334EC00EFCC53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Soluful Supplication/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Soluful Supplication";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2024 ASN GROUP LLC. All rights reserved.";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/lib/swift",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.asndigital.MyMusic.Soluful-Supplication";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6EE4FF302B5334EC00EFCC53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Soluful SupplicationUI/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Soluful SupplicationUI";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2024 ASN GROUP LLC. All rights reserved.";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/lib/swift",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.asndigital.MyMusic.Soluful-SupplicationUI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6EE4FF312B5334EC00EFCC53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Soluful SupplicationUI/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Soluful SupplicationUI";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2024 ASN GROUP LLC. All rights reserved.";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/lib/swift",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.asndigital.MyMusic.Soluful-SupplicationUI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		83CEC38A24376D4B00188BF6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		83CEC38B24376D4B00188BF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		83CEC38D24376D4B00188BF6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Soulful Supplication.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = MyMusic/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/lib/swift",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.asndigital.MyMusic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		83CEC38E24376D4B00188BF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Soulful Supplication.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = MyMusic/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/lib/swift",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.asndigital.MyMusic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6EE4FF322B5334EC00EFCC53 /* Build configuration list for PBXNativeTarget "Soluful SupplicationUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6EE4FF302B5334EC00EFCC53 /* Debug */,
+				6EE4FF312B5334EC00EFCC53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6EE4FF332B5334EC00EFCC53 /* Build configuration list for PBXNativeTarget "Soluful Supplication" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6EE4FF2E2B5334EC00EFCC53 /* Debug */,
+				6EE4FF2F2B5334EC00EFCC53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83CEC37324376D4A00188BF6 /* Build configuration list for PBXProject "Soulful Supplication" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83CEC38A24376D4B00188BF6 /* Debug */,
+				83CEC38B24376D4B00188BF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83CEC38C24376D4B00188BF6 /* Build configuration list for PBXNativeTarget "Soulful Supplication" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83CEC38D24376D4B00188BF6 /* Debug */,
+				83CEC38E24376D4B00188BF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 83CEC37024376D4A00188BF6 /* Project object */;
+}
